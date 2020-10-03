@@ -10,6 +10,7 @@ namespace OrderProcessingApp.Controllers
 {
     public class HomeController : Controller
     {
+        // Simple home page for view order screen
         public IActionResult Index()
         {
             return View();

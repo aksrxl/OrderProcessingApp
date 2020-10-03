@@ -25,6 +25,8 @@ namespace OrderProcessingApp.Controllers
             return View("Orders", productBusiness.GetProductList());
         }
 
+
+        //Processes the payment
         public ActionResult Process(int productId, ProductType productType)
         {
             var paymentProcessor = paymentFactory.GetPaymentProcessingInstance(productType);
